@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
     s.source = { :http => "https://github.com/Lutzifer/grpc-swift/releases/download/#{s.version}/protoc-swift-plugins-#{s.version}-macOS-x86_64.zip"}
 
     s.dependency 'gRPC-Swift', s.version.to_s
-    s.preserve_paths = '*'
+    # s.preserve_paths = '*'
+    s.exclude_files = '**/file.zip'
 
 end
